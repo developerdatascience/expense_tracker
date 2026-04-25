@@ -1,4 +1,4 @@
-<![CDATA[<div align="center">
+<div align="center">
 
 # 💰 Expense Tracker
 
@@ -654,4 +654,3 @@ This project is licensed under the **GNU General Public License v3.0** — see t
 **Built with ❤️ using Python, FastAPI & Streamlit**
 
 </div>
-]]>
