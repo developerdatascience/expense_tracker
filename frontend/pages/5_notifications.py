@@ -1,12 +1,9 @@
 import streamlit as st
+from services.notification_client import NotificationClient
 
-st.title("🔔 Notification")
+st.title("🔔 Notifications")
 
-notifications = [
-    "⚠️ Budget exceeds for food",
-    "💡 You spent 30% more this week",
-    "📆 Electricity bill due tomorrow"
-]
+notifications = NotificationClient.get_notifications()
 
-for note in notifications:
-    st.info(note)
+for n in notifications:
+    st.info(f"{n['message']} ({n['type']})")
